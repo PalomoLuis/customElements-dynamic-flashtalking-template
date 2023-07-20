@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="ad.size" content="width={{settings.size.width}},height={{settings.size.height}}">
+
+    <title>{{settings.size.width}}x{{settings.size.height}}</title>
+
+    <link rel="stylesheet" href="{{content.css}}" type="text/css">
+</head>
+
+<body>
+  <ft-default clicktag="1">
+    <div class="banner border">
+      <div class="content fullscreen">
+        <ft-dynamic name="bg" class="bg"></ft-dynamic>
+        <ft-dynamic name="title" class="title"></ft-dynamic>
+        <div class="cta">
+          <ft-dynamic name="cta" class="cta_copy"></ft-dynamic>
+        </div>
+      </div>
+      <div class="mainExit fullscreen"></div>
+    </div>
+  </ft-default>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js"></script>
+</body>
+</html>
